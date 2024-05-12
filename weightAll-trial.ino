@@ -34,6 +34,7 @@ char pass[] = "ConformIT";
 // Blynk virtual pin numbers
 #define VPIN_LEVEL V1
 #define VPIN_WEIGHT V2
+#define VPIN_MESSAGE V0 // Virtual pin for displaying messages on Blynk
 
 bool obstacleDetected = false;
 unsigned long obstacleDetectedTime = 0;
@@ -88,6 +89,7 @@ void loop() {
   if (levelPercent > 90) {
     displayMessage("Please Empty Me");
     beep();
+    Blynk.virtualWrite(VPIN_MESSAGE, "Please Empty Me"); // Send message to Blynk
   }
 
   // Check if weight exceeds threshold
@@ -95,6 +97,7 @@ void loop() {
     displayMessage("Weight Exceeded!");
     beep(); // Activate the buzzer
     // Additional actions can be taken here if needed
+    Blynk.virtualWrite(VPIN_MESSAGE, "Weight Exceeded!"); // Send message to Blynk
   }
 
   // Check if both level and weight are below their thresholds before opening the lid
@@ -106,6 +109,7 @@ void loop() {
     }
     displayMessage("Feed me Garbage");
     beep();
+    Blynk.virtualWrite(VPIN_MESSAGE, "Feed me Garbage"); // Send message to Blynk
   } else {
     if (obstacleDetected) {
       unsigned long currentTime = millis();
@@ -114,6 +118,7 @@ void loop() {
         displayMessage("Thank You!");
         delay(1000);
         obstacleDetected = false;
+        Blynk.virtualWrite(VPIN_MESSAGE, "Thank You!"); // Send message to Blynk
       }
     }
   }
