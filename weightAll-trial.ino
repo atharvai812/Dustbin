@@ -28,8 +28,8 @@ const int LOADCELL_SCK_PIN = 4;
 const float WEIGHT_THRESHOLD = 10000.0; // Threshold weight in grams (10 kg)
 
 char auth[] = "DwF17zDmM4eATunepCVHMEt1lXuJvKFI";
-char ssid[] = "Atharva";
-char pass[] = "ConformIT";
+char ssid[] = "My SSID";
+char pass[] = "C*Password";
 
 // Blynk virtual pin numbers
 #define VPIN_LEVEL V1
