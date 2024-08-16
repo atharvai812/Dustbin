@@ -1,5 +1,5 @@
-#define BLYNK_TEMPLATE_ID "TMPL3av7RYUwn"
-#define BLYNK_TEMPLATE_NAME "Dustbin"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
 
 #include <ESP32Servo.h>
 #include <Wire.h>
