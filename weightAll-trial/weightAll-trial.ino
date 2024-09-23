@@ -1,5 +1,5 @@
-#define BLYNK_TEMPLATE_ID "TMPL3av7RYUwn"
-#define BLYNK_TEMPLATE_NAME "Dustbin"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
 
 #include <ESP32Servo.h>
 #include <Wire.h>
@@ -28,8 +28,8 @@ const int LOADCELL_SCK_PIN = 4;
 const float WEIGHT_THRESHOLD = 10000.0; // Threshold weight in grams (10 kg)
 
 char auth[] = "DwF17zDmM4eATunepCVHMEt1lXuJvKFI";
-char ssid[] = "Atharva";
-char pass[] = "ConformIT";
+char ssid[] = "My SSID";
+char pass[] = "C*Password";
 
 // Blynk virtual pin numbers
 #define VPIN_LEVEL V1
