@@ -27,7 +27,7 @@ const int LOADCELL_DOUT_PIN = 16;
 const int LOADCELL_SCK_PIN = 4;
 const float WEIGHT_THRESHOLD = 10000.0; // Threshold weight in grams (10 kg)
 
-char auth[] = "DwF17zDmM4eATunepCVHMEt1lXuJvKFI";
+char auth[] = "auth token";
 char ssid[] = "My SSID";
 char pass[] = "C*Password";
 
